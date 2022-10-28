@@ -29,7 +29,7 @@
 </div>
 
 <div class="tab">
-	<button class="tablinks" onclick="openTab(event, 'tab1')">tab1</button>
+	
 	<button class="tablinks" onclick="openTab(event, 'tab2')">tab2</button>
 	<button class="tablinks" onclick="openTab(event, 'tab3')">tab3</button>
 </div>
@@ -37,7 +37,7 @@
 <div id="tab1" class="tabcontent">
 	<h1> Tab one content </h1>
 	<p> ppoooopp</p>
-	<span onclick="this.parentElement.style.display='none'">x</span>
+	<span onclick="this.parentElement.style.display='none'"><button class="tablinks" onclick="openTab(event, 'tab1')">tab1</button></span>
 </div>
 
 <div id="tab2" class="tabcontent">
