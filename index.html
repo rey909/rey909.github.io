@@ -2,12 +2,66 @@
 <html lang="en">
 <head>
 <title>rey909 github webpage</title>
-<style></style>
+<style>
+.headerCLass {
+}
+.tabcontent {
+}
+</style>
 </head>
 <body>
 
-<h1> beeeeecca </h1> 
-<p> whhooa </p>
+<div class="headerClass">
+	<h1> beeeeecca </h1> 
+	<p> whhooa </p>
+</div>
+
+<div class="tab">
+	<button class="tablinks" onclick="openTab(event, 'tab1')">tab1</button>
+	<button class="tablinks" onclick="openTab(event, 'tab2')">tab2</button>
+	<button class="tablinks" onclick="openTab(event, 'tab3')">tab3</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+	<h1> Poop </h1>
+	<p> ppoooopp</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+	<h1> More poop </h1>
+	<p> ppoooopp</p>
+</div>
+
+<div id="tab3" class="tabcontent">
+	<h1> cool </h1>
+	<p> nosdfpisdjf</p>
+</div>
+
+<script>
+function openTab(event, tabName) {
+	var i, tabClass
+	
+	tabcontent = document.getElementsByClassName("tabClass");
+	for (int i = 0; i < tabClass.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	
+	tabClass = document.getElementsByClassName("tabClass");
+	for (int i = 0; i < tabClass.length; i++) {
+		tablinks[i].style.display = "none";
+	}
+	
+	document.getElementById(cityName).style.display = "block";
+	event.currentTarget.className += " active";
+	
+}
+
+</script>
+
+	
+	
+
+
 
 </body>
 </html>
