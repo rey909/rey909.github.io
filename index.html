@@ -5,8 +5,20 @@
 <style>
 .headerCLass {
 }
-.tabcontent {
+.tab {
+	overflow: hidden;
 }
+.tab button {
+	transition: 0.3s;
+}
+.tab button: hover {
+	background-color: #ddd;
+}
+.tab button: active {
+	background-color: #ccc;
+}
+
+
 </style>
 </head>
 <body>
@@ -25,6 +37,7 @@
 <div id="tab1" class="tabcontent">
 	<h1> Poop </h1>
 	<p> ppoooopp</p>
+	<span onclick="this.parentElement.style.display='none'">x</span>
 </div>
 
 <div id="tab2" class="tabcontent">
