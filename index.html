@@ -39,19 +39,19 @@
 
 <script>
 function openTab(event, tabName) {
-	var i, tabClass
+	var i, tabcontent, tablinks;
 	
 	tabcontent = document.getElementsByClassName("tabClass");
-	for (int i = 0; i < tabClass.length; i++) {
+	for (int i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
 	}
 	
 	tabClass = document.getElementsByClassName("tabClass");
-	for (int i = 0; i < tabClass.length; i++) {
-		tablinks[i].style.display = "none";
+	for (int i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	}
 	
-	document.getElementById(cityName).style.display = "block";
+	document.getElementById(tabName).style.display = "block";
 	event.currentTarget.className += " active";
 	
 }
