@@ -18,19 +18,21 @@ h1 {color: blue;
 </div?
 
 <div>
-	<input type = "button" onclick = "displayContent()" value = "TAB 1">
+	<input type = "button" onclick = "displayContent("tab1", "header")" value = "TAB 1">
 </div>
 
 <div id="tab1" class="tab" display = "none">
 	<h1> Hello! </h1>
 	<p> This is my first tab. You can close it if you'd like </p>
+	<input type = "button" onclick = "displayContent("header", "tab1")" value = "X">
 	<span onclick="this.parentElement.style.display='none'"><button class="tablinks">close</button></span>
 </div>
 
 <script>
-function displayContent() {
-	document.getElementById("tab1").style.display = "block";
-	document.getElementById("header").style.display = "none";
+function displayContent(contentToDisplay, contentToClose) {
+	
+	document.getElementById(contentToDisplay).style.display = "block";
+	document.getElementById(contentToClose).style.display = "none";
 }
 
 </script>
