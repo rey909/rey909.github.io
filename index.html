@@ -18,14 +18,55 @@ h1 {color: blue;
 </div?
 
 <div>
-	<input type = "button" onclick = "displayContent('tab1', 'header')" value = "TAB 1">
+	<input type = "button" onclick = "displayContent('education', 'header')" value = "EDUCATION">
+	<input type = "button" onclick = "displayContent('projects', 'header')" value = "PROJECTS">
+	<input type = "button" onclick = "displayContent('life_outside_cs', 'header')" value = "LIFE OUTSIDE CS">
+	<input type = "button" onclick = "displayContent('resume', 'header')" value = "RESUME">
+	<input type = "button" onclick = "displayContent('skills', 'header')" value = "SKILLS">
+	<input type = "button" onclick = "displayContent('contact_me', 'header')" value = "CONTACT ME">
 </div>
 
-<div id="tab1" class="tab" display = "none">
+<div id="education" class="tab" display = "none">
+	<h1> Hello! </h1>
+	<!-- <input type = "button" onclick = "displayContent('relevant_courses', 'education')" value = "RELEVANT COURSES"> -->
+	<p> This is my first tab. You can close it if you'd like </p>
+	<input type = "button" onclick = "displayContent('header', 'education')" value = "X">
+</div>
+
+<!-- <div id="relevant_courses" class="tab" display = "none">
 	<h1> Hello! </h1>
 	<p> This is my first tab. You can close it if you'd like </p>
 	<input type = "button" onclick = "displayContent('header', 'tab1')" value = "X">
-	<span onclick="this.parentElement.style.display='none'"><button class="tablinks">close</button></span>
+</div> -->
+
+<div id="projects" class="tab" display = "none">
+	<h1> PROJECTS </h1>
+	<p> Here are some projects I've been working on </p>
+	<input type = "button" onclick = "displayContent('header', 'projects')" value = "X">
+</div>
+
+<div id="life_outside_cs" class="tab" display = "none">
+	<h1> LIFE OUTSIDE CS </h1>
+	<p> Heres what I do for fun </p>
+	<input type = "button" onclick = "displayContent('header', 'life_outside_cs')" value = "X">
+</div>
+
+<div id="resume" class="tab" display = "none">
+	<h1> RESUME </h1>
+	<p> Downloadable copy of my up-to-date resume: </p>
+	<input type = "button" onclick = "displayContent('header', 'resume')" value = "X">
+</div>
+
+<div id="skills" class="tab" display = "none">
+	<h1> SKILLS </h1>
+	<p> Programming languages: </p>
+	<input type = "button" onclick = "displayContent('header', 'skills')" value = "X">
+</div>
+
+<div id="contact_me" class="tab" display = "none">
+	<h1> CONTACT ME </h1>
+	<p> email:  </p>
+	<input type = "button" onclick = "displayContent('header', 'contact_me')" value = "X">
 </div>
 
 <script>
